@@ -335,3 +335,179 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
 .overlap-value span {
   color: #64748b !important;
 }
+
+/* --- STATION MEDIA GRID & OVERVIEW MAP OVERRIDES --- */
+.station-media-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 10px !important;
+  margin-bottom: 12px !important;
+}
+
+.station-overview {
+  height: 110px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(16, 185, 129, 0.25) !important;
+  background: #f1f5f9 !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+}
+.station-overview:hover {
+  transform: scale(1.02) !important;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.12) !important;
+  border-color: #10b981 !important;
+}
+.station-overview>div {
+  position: absolute !important;
+  inset: 0 !important;
+  background-image: url("../output/lushan_glacial_map.png") !important;
+  background-size: cover !important;
+  background-position: center 43% !important;
+  filter: saturate(0.85) contrast(1.05) !important;
+}
+
+.station-photo {
+  height: 110px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  background: rgba(16, 185, 129, 0.02) !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+}
+.station-photo:hover {
+  transform: scale(1.02) !important;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.12) !important;
+  border-color: #10b981 !important;
+}
+.station-photo>div {
+  display: none !important;
+}
+
+.photo-placeholder {
+  position: absolute !important;
+  inset: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #475569 !important;
+  font-size: 9px !important;
+  gap: 5px !important;
+  border: 1px dashed rgba(16, 185, 129, 0.3) !important;
+  border-radius: 11px !important;
+  background: rgba(16, 185, 129, 0.02) !important;
+}
+.photo-placeholder svg {
+  width: 18px !important;
+  height: 18px !important;
+  color: #10b981 !important;
+  opacity: 0.85 !important;
+}
+
+.station-photo img.visible {
+  display: block !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: 3 !important;
+}
+
+.media-label {
+  position: absolute !important;
+  right: 6px !important;
+  top: 6px !important;
+  z-index: 4 !important;
+  padding: 2px 6px !important;
+  background: rgba(15, 23, 42, 0.6) !important;
+  color: white !important;
+  font-size: 8px !important;
+  font-weight: 500 !important;
+  border-radius: 4px !important;
+  pointer-events: none !important;
+}
+
+#stationBadge {
+  position: absolute !important;
+  left: 8px !important;
+  bottom: 8px !important;
+  z-index: 4 !important;
+  padding: 4px 8px !important;
+  background: #f59e0b !important;
+  color: white !important;
+  font-size: 9px !important;
+  font-weight: 800 !important;
+  border-radius: 6px !important;
+}
+
+/* --- ADDITIONAL FONT & BACKING CONTRAST FIXES --- */
+.coordinates, .map-label {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06) !important;
+  border-radius: 8px !important;
+}
+
+.timeline-item>small {
+  color: #475569 !important;
+}
+
+.text-action {
+  color: #475569 !important;
+}
+.text-action:hover {
+  color: #ef4444 !important;
+}
+
+.history-copy span {
+  color: #475569 !important;
+}
+
+.history-delete {
+  color: #64748b !important;
+}
+.history-delete:hover {
+  color: #ef4444 !important;
+}
+
+.history-locate {
+  color: white !important;
+  border-radius: 6px !important;
+}
+
+.sync-note {
+  color: #475569 !important;
+}
+
+.leaflet-control-layers label {
+  color: #0f172a !important;
+  display: block !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  margin: 4px 0 !important;
+}
+.leaflet-control-layers input {
+  margin-right: 6px !important;
+  accent-color: #10b981 !important;
+}
+
+.member-actions button, .member-actions a {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(16, 185, 129, 0.25) !important;
+  color: #334155 !important;
+  border-radius: 6px !important;
+}
+.member-actions button:hover, .member-actions a:hover {
+  background: rgba(16, 185, 129, 0.1) !important;
+  color: #047857 !important;
+  border-color: #10b981 !important;
+}

@@ -400,6 +400,7 @@
   .team-comms {
     position: relative !important;
     top: auto !important;
+    width: 100% !important;
     display: flex !important;
     flex-direction: column !important;
     flex: 1 1 auto !important;

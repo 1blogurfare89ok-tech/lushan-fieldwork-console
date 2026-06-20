@@ -527,7 +527,7 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
 /* 2. Topbar Action Buttons Contrast Fix */
 #openTeam, #exportReport {
   background: linear-gradient(135deg, #047857 0%, #065f46 100%) !important;
-  color: rgba(16, 26, 23, 0.8) !important;
+  color: #ffffff !important;
 }
 #openTeam:hover, #exportReport:hover {
   background: linear-gradient(135deg, #065f46 0%, #047857 100%) !important;
@@ -583,4 +583,9 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
   .map-stage .terrain-readout {
     right: 370px !important;
   }
+}
+
+select option {
+  background-color: #17221f !important;
+  color: #f3f4f6 !important;
 }

@@ -174,7 +174,7 @@
     height: auto !important;
     min-height: 100% !important;
     z-index: 2000 !important;
-    background: rgba(248, 250, 252, 0.96) !important;
+    background: rgba(16, 26, 23, 0.95) !important;
     backdrop-filter: blur(25px) !important;
     -webkit-backdrop-filter: blur(25px) !important;
     border: none !important;

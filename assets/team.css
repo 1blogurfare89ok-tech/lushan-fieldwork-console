@@ -154,7 +154,7 @@
 }
 .member-avatar {
   background: rgba(66, 197, 138, 0.15) !important;
-  color: #047857 !important;
+  color: #42c58a !important;
   border: 1px solid rgba(66, 197, 138, 0.2) !important;
 }
 .member-main strong {
@@ -207,26 +207,27 @@
 
 .sos-banner {
   border-radius: 12px !important;
-  background: rgba(254, 242, 242, 0.95) !important;
+  background: rgba(123, 48, 39, 0.9) !important;
   backdrop-filter: blur(12px) !important;
-  border: 1px solid rgba(239, 68, 68, 0.3) !important;
-  box-shadow: 0 10px 30px rgba(239, 68, 68, 0.08) !important;
-  color: #991b1b !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(239, 138, 119, 0.4) !important;
+  box-shadow: 0 10px 30px rgba(228, 114, 92, 0.3) !important;
+  color: #ffffff !important;
 }
 .sos-banner strong {
-  color: #991b1b !important;
+  color: #ffffff !important;
 }
 .sos-banner span {
-  color: #e4725c !important;
+  color: #ffd1c8 !important;
 }
 .sos-banner button {
-  background: #e4725c !important;
-  border: 1px solid #e4725c !important;
+  background: #b91c1c !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
   color: white !important;
   border-radius: 8px !important;
   font-weight: 600 !important;
 }
 .sos-banner button:hover {
-  background: #dc2626 !important;
-  border-color: #dc2626 !important;
+  background: #991b1b !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
 }

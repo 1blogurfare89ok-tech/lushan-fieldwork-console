@@ -277,7 +277,7 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
 .icon-btn:hover, .api-row button:hover, .sync-actions button:hover, .member-actions button:hover, .member-actions a:hover, .lightbox-toolbar button:hover {
   background: rgba(66, 197, 138, 0.15) !important;
   border-color: #42c58a !important;
-  color: #047857 !important;
+  color: #42c58a !important;
   transform: translateY(-1px) !important;
   box-shadow: 0 4px 12px rgba(66, 197, 138, 0.15) !important;
 }
@@ -508,7 +508,7 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
 }
 .member-actions button:hover, .member-actions a:hover {
   background: rgba(66, 197, 138, 0.15) !important;
-  color: #047857 !important;
+  color: #42c58a !important;
   border-color: #42c58a !important;
 }
 
@@ -561,7 +561,7 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
   color: #9ca3af !important;
 }
 .text-action:hover {
-  color: #b91c1c !important;
+  color: #e4725c !important;
 }
 
 /* 7. Trash Icon Contrast Fix */
@@ -569,7 +569,7 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
   color: #9ca3af !important;
 }
 .history-delete:hover {
-  color: #b91c1c !important;
+  color: #e4725c !important;
 }
 
 /* 8. Map Controls Horizontal Offset on Desktop */

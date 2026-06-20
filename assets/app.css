@@ -579,7 +579,8 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
   .map-stage .map-scale {
     left: 330px !important;
   }
-  .map-stage .leaflet-right {
+  .map-stage .leaflet-right,
+  .map-stage .terrain-readout {
     right: 370px !important;
   }
 }

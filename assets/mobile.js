@@ -78,4 +78,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // Set initial elevation label based on screen width
+  const elevLabel = document.querySelector(".terrain-readout span");
+  if (elevLabel) {
+    elevLabel.textContent = window.innerWidth <= 760 ? "点击位置高程" : "鼠标悬停高程";
+  }
 });
+

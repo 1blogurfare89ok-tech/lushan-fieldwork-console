@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#17221f"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; connect-src 'self' http: https: ws: wss:; worker-src 'self' blob:; font-src 'self' data:"><link rel="icon" href="data:,"><title>庐山地貌水文研判台</title>
+  <meta name="theme-color" content="#17221f"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; connect-src 'self' http: https: ws: wss:; worker-src 'self' blob:; font-src 'self' data: https://fonts.gstatic.com"><link rel="icon" href="data:,"><title>庐山地貌水文研判台</title>
   <link rel="stylesheet" href="./assets/leaflet.css"><link rel="stylesheet" href="./assets/app.css"><link rel="stylesheet" href="./assets/terrain.css"><link rel="stylesheet" href="./assets/workflow.css"><link rel="stylesheet" href="./assets/team.css"><link rel="stylesheet" href="./assets/mobile.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <div class="top-actions"><span class="status"><b></b><span id="apiStatus">ALOS 地形数据就绪</span></span><div class="mode-switch"><button id="mode2d"><i data-lucide="map"></i><span>二维</span></button><button id="mode3d" class="active"><i data-lucide="mountain"></i><span>三维</span></button></div><button class="icon-btn" id="fitMap" title="恢复当前全景"><i data-lucide="scan"></i></button><button class="icon-btn" id="syncRecords" title="刷新手机记录"><i data-lucide="smartphone"></i></button><button class="mode-btn team-btn" id="openTeam"><i data-lucide="users"></i><span>团队总控</span></button><button class="mode-btn export-btn" id="exportReport"><i data-lucide="file-down"></i><span>导出报告</span></button></div>
   </header>
   <main class="workspace">
-    <aside class="left-rail">
+    <aside class="left-rail" tabindex="0">
       <section class="block overview"><div class="heading"><span>空间概览</span><small>LIVE OVERVIEW</small></div>
         <div class="metrics"><div><span>考察站点</span><strong>03</strong></div><div><span>冰川单元</span><strong>04</strong></div><div><span>现代集水区</span><strong>03</strong></div></div>
         <div class="layers"><label><input type="checkbox" id="toggleGlacier" checked><i class="swatch glacier"></i>历史冰川范围</label><label><input type="checkbox" id="toggleWatershed" checked><i class="swatch watershed"></i>现代集水区</label><label><input type="checkbox" id="toggleStations" checked><i class="swatch station"></i>考察站点</label><label><input type="checkbox" id="toggleContours" checked><i class="swatch contour"></i>地形网格</label></div>
@@ -22,7 +22,7 @@
       <section class="block api-block"><div class="heading"><span>手机协同</span><small id="syncBadge">WAITING</small></div><div class="api-row"><input id="apiBase" value="" aria-label="API 地址"><button id="refreshApi" title="连接分析服务"><i data-lucide="refresh-cw"></i></button></div><div class="sync-actions"><button id="copyApi"><i data-lucide="copy"></i>复制地址</button><button id="refreshRecords"><i data-lucide="download"></i>拉取记录</button></div><p class="sync-note" id="syncNote">将此地址填入手机 App 后端配置</p></section>
     </aside>
     <section class="map-stage"><div id="terrainMap"></div><div id="flatMap" aria-hidden="true"></div><div class="map-title"><span id="mapModeTitle">庐山三维地形</span><small id="mapModeSubtitle">ALOS 30 m DSM · 垂直夸张 2.2×</small></div><div class="analysis-hint" id="analysisHint"><i data-lucide="mouse-pointer-2"></i><span>单击地图提取集水区</span></div><div class="terrain-readout"><span>高程</span><strong id="hoverElevation">-- m</strong><span id="coordinates">29.58°N · 116.00°E</span></div><div class="compass"><i data-lucide="navigation"></i><span>N</span></div><div class="map-scale"><span></span><b>5 km</b></div><div class="view-chips"><button data-view="overview" class="active">全景</button><button data-view="wangjiapo">王家坡</button><button data-view="daxiaochang">大校场</button><button data-view="feilaishi">飞来石</button><button id="panMode"><i data-lucide="move"></i>平移</button></div><div class="analysis-loading" id="analysisLoading"><span></span><strong>正在执行 D8 集水区分析</strong></div></section>
-    <aside class="right-rail">
+    <aside class="right-rail" tabindex="0">
       <section class="block profile-block"><div class="heading"><span>路线高程剖面</span><small>PROFILE A-A'</small></div><canvas id="profileChart"></canvas><div class="profile-summary"><div><span>路线长度</span><strong>6.8 km</strong></div><div><span>累计爬升</span><strong>742 m</strong></div><div><span>最高点</span><strong>1,286 m</strong></div></div></section>
       <section class="block evidence"><div class="heading"><span>当前站点</span><small id="stationIndex">STATION 01</small></div><div class="station-media-grid">
           <!-- 区域地质总览图 (常驻) -->

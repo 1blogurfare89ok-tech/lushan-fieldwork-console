@@ -511,3 +511,75 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
   color: #047857 !important;
   border-color: #10b981 !important;
 }
+
+/* --- WEBGIS CONSOLE UI CONTRAST & MAP CONTROL OFFSET FIXES --- */
+
+/* 1. Map Title Text Contrast Fix */
+.map-title {
+  background: rgba(255, 255, 255, 0.88) !important;
+  color: #0f172a !important;
+  border: 1px solid rgba(16, 185, 129, 0.25) !important;
+}
+#mapModeTitle {
+  color: #0f172a !important;
+}
+
+/* 2. Topbar Action Buttons Contrast Fix */
+#openTeam, #exportReport {
+  background: linear-gradient(135deg, #047857 0%, #065f46 100%) !important;
+  color: #ffffff !important;
+}
+#openTeam:hover, #exportReport:hover {
+  background: linear-gradient(135deg, #065f46 0%, #047857 100%) !important;
+  box-shadow: 0 4px 12px rgba(4, 120, 87, 0.25) !important;
+}
+
+/* 3. Active Timeline Card Subtext Contrast Fix */
+.timeline-item.active .timeline-copy span, 
+.timeline-item.active > small {
+  color: #1e293b !important;
+}
+
+/* 4. Landform Badge Background Darkening */
+#stationBadge {
+  background: #b45309 !important; /* Amber-700 */
+  color: #ffffff !important;
+}
+
+/* 5. SOS Banner Action Buttons Darkening */
+.sos-banner button {
+  background: #b91c1c !important; /* Red-700 */
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+.sos-banner button:hover {
+  background: #991b1b !important; /* Red-800 */
+}
+
+/* 6. Clear History Action Contrast Fix */
+.text-action {
+  color: #475569 !important;
+}
+.text-action:hover {
+  color: #b91c1c !important;
+}
+
+/* 7. Trash Icon Contrast Fix */
+.history-delete {
+  color: #64748b !important;
+}
+.history-delete:hover {
+  color: #b91c1c !important;
+}
+
+/* 8. Map Controls Horizontal Offset on Desktop */
+@media (min-width: 761px) {
+  .map-stage .leaflet-left,
+  .map-stage .compass,
+  .map-stage .map-scale {
+    left: 330px !important;
+  }
+  .map-stage .leaflet-right {
+    right: 370px !important;
+  }
+}

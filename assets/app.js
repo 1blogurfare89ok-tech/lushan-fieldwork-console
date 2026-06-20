@@ -3954,9 +3954,7 @@ function toggleAutoRotate(){
     }
 }function lN(){let o=document.querySelector(".lightbox-stage"),t=document.querySelector("#lightboxImage");document.querySelector("#clearHistory").onclick=()=>pN(),document.querySelector("#stationPhoto").onclick=dN,document.querySelector("#closeLightbox").onclick=HR,document.querySelector("#zoomIn").onclick=()=>pT(mr+.25),document.querySelector("#zoomOut").onclick=()=>pT(mr-.25),document.querySelector("#zoomReset").onclick=YR,t.addEventListener("wheel",a=>{a.preventDefault(),pT(mr+(a.deltaY<0?.18:-.18),a.clientX,a.clientY)},{passive:!1}),t.addEventListener("dblclick",a=>pT(mr<2?mr+.5:1,a.clientX,a.clientY)),o.addEventListener("pointerdown",a=>{Br={x:a.clientX,y:a.clientY,startX:Bl,startY:Hl},o.setPointerCapture(a.pointerId)}),o.addEventListener("pointermove",a=>{Br&&(Bl=Br.startX+a.clientX-Br.x,Hl=Br.startY+a.clientY-Br.y,TE())}),o.addEventListener("pointerup",()=>Br=null),o.addEventListener("pointercancel",()=>Br=null),document.querySelector("#panMode").onclick=hN,document.querySelector("#rotateLeft").onclick=()=>rotateMap(-15),document.querySelector("#rotateRight").onclick=()=>rotateMap(15),document.querySelector("#rotateAuto").onclick=()=>toggleAutoRotate(),document.querySelector(".compass").onclick=()=>{
     if(xr==="3d"&&pe){
-        let dy=xa.position.y-pe.target.y,dx=xa.position.x-pe.target.x,dz=xa.position.z-pe.target.z,h_dist=Math.sqrt(dx*dx+dz*dz);
-        xa.position.set(pe.target.x,pe.target.y+dy,pe.target.z+h_dist);
-        pe.update();
+        target3DRotationOffset = -pe.getAzimuthalAngle();
     } else if(xr==="2d"){
         targetFlatMapRotation = 0;
         flatMapAutoRotate = !1;

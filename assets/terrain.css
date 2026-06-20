@@ -1,0 +1,29 @@
+.map-stage { background: #0b1411; }
+#terrainMap, #terrainMap canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+#terrainMap { cursor: grab; }
+#terrainMap:active { cursor: grabbing; }
+.swatch.contour { height: 1px; border: 0; background: #b5c9bd; }
+.terrain-readout { position: absolute; right: 16px; top: 16px; z-index: 450; min-width: 122px; padding: 9px 11px; background: rgba(12, 23, 19, .88); border: 1px solid #40534c; pointer-events: none; }
+.terrain-readout span { display: block; color: #91a49d; font-size: 9px; }
+.terrain-readout strong { display: block; margin: 3px 0 6px; font-size: 16px; color: #f0f5f2; }
+.compass { position: absolute; left: 16px; top: 16px; z-index: 450; width: 42px; height: 48px; display: grid; place-items: center; padding: 6px 0; color: #e7eee9; background: rgba(12, 23, 19, .88); border: 1px solid #40534c; pointer-events: none; }
+.compass svg { width: 17px; color: var(--coral); }
+.compass span { font-size: 9px; font-weight: 800; }
+.map-scale { position: absolute; left: 16px; bottom: 18px; z-index: 450; color: #dbe5df; font-size: 9px; pointer-events: none; }
+.map-scale span { width: 82px; height: 7px; display: block; border: solid #dbe5df; border-width: 0 1px 1px; }
+.map-scale b { display: block; margin-top: 4px; font-weight: 500; }
+.view-chips { position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 460; display: flex; gap: 3px; padding: 4px; background: rgba(12, 23, 19, .9); border: 1px solid #40534c; }
+.view-chips button { height: 32px; padding: 0 11px; color: #bac9c3; background: transparent; border: 0; font-size: 10px; }
+.view-chips button.active { color: #102019; background: var(--green); font-weight: 700; }
+.view-chips button svg { width: 13px; vertical-align: -2px; margin-right: 4px; }
+#panMode.active { color: #102019; background: var(--amber); }
+.map-title { top: 16px; }
+.mode-btn.active { color: #eef5f1; background: #2b4039; border-color: #597168; }
+@media (max-width: 760px) {
+  .terrain-readout { top: 10px; right: 10px; min-width: 104px; }
+  .compass { left: 10px; top: 10px; }
+  .map-title { top: 68px; }
+  .view-chips { left: 10px; right: 10px; bottom: 12px; transform: none; overflow-x: auto; }
+  .view-chips button { flex: 1 0 auto; }
+  .map-scale { display: none; }
+}

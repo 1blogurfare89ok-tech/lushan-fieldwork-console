@@ -1,0 +1,13 @@
+{
+  "bounds": {
+    "west": 115.85,
+    "south": 29.45,
+    "east": 116.12,
+    "north": 29.72
+  },
+  "gridSize": 257,
+  "minElevation": 5.2,
+  "maxElevation": 1450.2,
+  "meanElevation": 216.0,
+  "source": "ALOS World 3D 30m DSM, N029E115 + N029E116"
+}

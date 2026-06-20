@@ -1,0 +1,14 @@
+@media (max-width: 760px) {
+  html, body { height: auto; min-height: 100%; }
+  body { overflow-x: hidden; overflow-y: auto; }
+  .app-shell { height: auto; min-height: 100vh; }
+  .workspace, .left-rail, .right-rail { min-height: auto; }
+  .topbar, .top-actions, .team-header, .team-head-actions { min-width: 0; }
+  .brand { min-width: 0; }
+  .brand > div:last-child { min-width: 0; }
+  .brand strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .team-console { width: 100%; max-width: 100vw; overflow: hidden; }
+  .team-workspace { min-width: 0; grid-template-columns: minmax(0, 1fr); }
+  .member-list { grid-template-columns: minmax(0, 1fr); }
+  .sos-banner { max-width: calc(100vw - 16px); }
+}

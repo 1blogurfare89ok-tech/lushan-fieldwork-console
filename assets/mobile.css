@@ -160,7 +160,31 @@
     display: none !important;
   }
   .top-actions {
+    gap: 5px !important;
+  }
+  #syncRecords {
+    display: none !important;
+  }
+  .topbar {
+    padding: 0 8px !important;
+  }
+  .brand {
     gap: 6px !important;
+  }
+  .brand strong {
+    font-size: 13px !important;
+  }
+  .brand-mark {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  .mode-switch {
+    gap: 2px !important;
+    padding: 2px !important;
+  }
+  .mode-switch button {
+    height: 28px !important;
+    padding: 0 6px !important;
   }
 }
 

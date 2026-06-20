@@ -399,6 +399,7 @@
   /* Chat feed taking up all remaining space */
   .team-comms {
     position: relative !important;
+    top: auto !important;
     display: flex !important;
     flex-direction: column !important;
     flex: 1 1 auto !important;

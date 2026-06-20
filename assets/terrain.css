@@ -27,3 +27,81 @@
   .view-chips button { flex: 1 0 auto; }
   .map-scale { display: none; }
 }
+
+/* --- BRIGHT THEME TERRAIN OVERRIDES --- */
+.map-stage {
+  background: #f1f5f9 !important;
+}
+
+.compass, .terrain-readout, .map-scale, .view-chips, .terrain-toolbar, .terrain-note, .terrain-header > div {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 32px 0 rgba(15, 23, 42, 0.08) !important;
+  color: #0f172a !important;
+}
+
+.compass {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.compass svg {
+  color: #ef4444 !important; /* Vibrant Red Needle */
+}
+.compass span {
+  color: #0f172a !important;
+  font-size: 9px !important;
+  font-weight: 800 !important;
+  margin-top: -2px !important;
+}
+
+.terrain-readout strong {
+  color: #0f172a !important;
+}
+.terrain-readout span {
+  color: #475569 !important;
+}
+
+.map-scale {
+  color: #334155 !important;
+}
+.map-scale span {
+  border-color: #334155 !important;
+}
+
+.view-chips button {
+  color: #475569 !important;
+  border-radius: 16px !important;
+}
+.view-chips button.active {
+  color: white !important;
+  background: #10b981 !important;
+  font-weight: 700 !important;
+}
+
+.terrain-chip {
+  border-radius: 16px !important;
+}
+.terrain-chip.active {
+  background: #10b981 !important;
+  color: white !important;
+}
+
+.terrain-header > div {
+  border-left: 3px solid #10b981 !important;
+  color: #0f172a !important;
+}
+.terrain-header small {
+  color: #059669 !important;
+}
+.terrain-header strong {
+  color: #0f172a !important;
+}

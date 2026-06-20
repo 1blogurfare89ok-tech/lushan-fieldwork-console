@@ -67,3 +67,104 @@
   .analysis-hint { left: 10px; top: 122px; }
   .field-form { grid-template-columns: 1fr 1fr; }
 }
+
+/* --- BRIGHT THEME WORKFLOW OVERRIDES --- */
+.mode-switch {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  border-radius: 12px !important;
+  padding: 3px !important;
+}
+.mode-switch button {
+  color: #475569 !important;
+  border-radius: 8px !important;
+}
+.mode-switch button.active {
+  color: white !important;
+  background: #10b981 !important;
+  font-weight: 700 !important;
+}
+
+.analysis-hint {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-left: 3px solid #10b981 !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08) !important;
+  border-radius: 6px !important;
+}
+.analysis-hint svg {
+  color: #10b981 !important;
+}
+
+.analysis-loading {
+  background: rgba(255, 255, 255, 0.72) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  color: #0f172a !important;
+}
+.analysis-loading span {
+  border-color: rgba(16, 185, 129, 0.2) !important;
+  border-top-color: #10b981 !important;
+}
+
+.sync-actions button {
+  color: #334155 !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(16, 185, 129, 0.25) !important;
+  border-radius: 8px !important;
+}
+.sync-actions button:hover {
+  background: rgba(16, 185, 129, 0.1) !important;
+  color: #047857 !important;
+  border-color: #10b981 !important;
+}
+
+.sync-note {
+  color: #64748b !important;
+}
+
+.file-field {
+  border: 1px dashed rgba(16, 185, 129, 0.3) !important;
+  background: rgba(16, 185, 129, 0.02) !important;
+  border-radius: 8px !important;
+}
+.file-field:hover {
+  border-color: #10b981 !important;
+  background: rgba(16, 185, 129, 0.06) !important;
+}
+.file-field svg {
+  color: #10b981 !important;
+}
+
+.history-empty {
+  border: 1px dashed rgba(16, 185, 129, 0.2) !important;
+  color: #64748b !important;
+  background: transparent !important;
+  border-radius: 8px !important;
+}
+
+.history-item {
+  background: rgba(255, 255, 255, 0.5) !important;
+  border: 1px solid rgba(16, 185, 129, 0.15) !important;
+  border-radius: 8px !important;
+  color: #334155 !important;
+}
+.history-item:hover {
+  border-color: #10b981 !important;
+  background: rgba(16, 185, 129, 0.05) !important;
+}
+.history-locate {
+  background: #10b981 !important;
+  color: white !important;
+  border-radius: 6px !important;
+}
+
+.lightbox {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  color: #0f172a !important;
+}
+.lightbox-toolbar {
+  border-bottom: 1px solid rgba(16, 185, 129, 0.15) !important;
+}

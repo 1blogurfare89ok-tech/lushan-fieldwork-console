@@ -4,37 +4,101 @@
 
 :root {
   font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  --panel: rgba(23, 34, 31, 0.7) !important;
-  --line: rgba(66, 197, 138, 0.15) !important;
-  --muted: #9ca3af !important;
-  --green: #42c58a !important;
-  --ice: #79bfe7 !important;
-  --amber: #e8b04b !important;
-  --coral: #e4725c !important;
-  --bg-deep: #0b1311 !important;
+  --panel: rgba(255, 255, 255, 0.8) !important;
+  --line: rgba(16, 185, 129, 0.15) !important;
+  --muted: #475569 !important;
+  --green: #10b981 !important;
+  --ice: #0ea5e9 !important;
+  --amber: #f59e0b !important;
+  --coral: #ef4444 !important;
+  --bg-deep: #f8fafc !important;
 }
 
 body {
-  background-color: var(--bg-deep) !important;
-  color: #f3f4f6 !important;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%) !important;
+  color: #0f172a !important;
   font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   letter-spacing: -0.011em !important;
 }
 
+.app-shell {
+  background: transparent !important;
+}
+
 .topbar {
-  background: rgba(11, 19, 17, 0.8) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--line) !important;
+  background: rgba(255, 255, 255, 0.72) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(16, 185, 129, 0.15) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03) !important;
+}
+
+.brand-mark {
+  background: rgba(16, 185, 129, 0.1) !important;
+  border: 1px solid rgba(16, 185, 129, 0.3) !important;
+  color: #059669 !important;
+  border-radius: 8px !important;
+}
+
+.brand strong {
+  color: #0f172a !important;
+}
+
+.brand small {
+  color: #475569 !important;
+}
+
+.status {
+  color: #334155 !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  padding: 6px 12px !important;
+  border-radius: 20px !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.status b {
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2) !important;
+  background: #10b981 !important;
+}
+
+/* Floating panels for WebGIS Cockpit */
+.workspace {
+  position: relative !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  height: calc(100vh - 64px) !important;
+  padding: 16px !important;
+  gap: 16px !important;
+  pointer-events: none !important;
+}
+
+.map-stage {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 10 !important;
+  pointer-events: auto !important;
 }
 
 .left-rail, .right-rail {
-  background: var(--panel) !important;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-color: var(--line) !important;
+  position: relative !important;
+  z-index: 100 !important;
+  pointer-events: auto !important;
+  height: 100% !important;
+  width: 310px !important;
+  margin: 0 !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(16, 185, 129, 0.15) !important;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08) !important;
+  overflow-y: auto !important;
+  background: rgba(255, 255, 255, 0.82) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
   scrollbar-width: thin;
-  scrollbar-color: rgba(66, 197, 138, 0.25) transparent;
+  scrollbar-color: rgba(16, 185, 129, 0.25) transparent !important;
 }
 
 .left-rail::-webkit-scrollbar, 
@@ -48,128 +112,226 @@ body {
 .right-rail::-webkit-scrollbar-thumb, 
 .message-feed::-webkit-scrollbar-thumb, 
 .history-list::-webkit-scrollbar-thumb {
-  background: rgba(66, 197, 138, 0.25);
-  border-radius: 3px;
+  background: rgba(16, 185, 129, 0.25) !important;
+  border-radius: 3px !important;
 }
 .left-rail::-webkit-scrollbar-thumb:hover, 
 .right-rail::-webkit-scrollbar-thumb:hover, 
 .message-feed::-webkit-scrollbar-thumb:hover, 
 .history-list::-webkit-scrollbar-thumb:hover {
-  background: rgba(66, 197, 138, 0.45);
+  background: rgba(16, 185, 129, 0.45) !important;
 }
 
-.map-title, .terrain-readout, .compass, .map-scale, .view-chips, .terrain-toolbar, .terrain-note, .terrain-header > div {
-  background: rgba(11, 19, 17, 0.8) !important;
+/* Reposition Leaflet native controls down to prevent overlaps with overlays */
+.leaflet-top.leaflet-left {
+  top: 80px !important;
+  left: 16px !important;
+}
+
+.leaflet-top.leaflet-right {
+  top: 80px !important;
+  right: 16px !important;
+}
+
+/* Style Leaflet controls to match glassmorphism */
+.leaflet-control-layers, .leaflet-bar, .leaflet-control-zoom-in, .leaflet-control-zoom-out {
+  background: rgba(255, 255, 255, 0.85) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
-  border: 1px solid rgba(66, 197, 138, 0.2) !important;
-  border-radius: 10px !important;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06) !important;
+  color: #0f172a !important;
 }
-.map-title {
-  border-top: 3px solid var(--green) !important;
+.leaflet-bar {
+  border: none !important;
 }
-.view-chips, .terrain-toolbar {
-  border-radius: 20px !important;
-  padding: 4px 8px !important;
+.leaflet-bar a {
+  background: transparent !important;
+  color: #0f172a !important;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.1) !important;
+  transition: all 0.2s ease !important;
 }
-.view-chips button, .terrain-chip {
-  border-radius: 16px !important;
+.leaflet-bar a:last-child {
+  border-bottom: none !important;
 }
-.compass {
-  border-radius: 50% !important;
-  width: 44px !important;
-  height: 44px !important;
-  padding: 0 !important;
+.leaflet-bar a:hover {
+  background: rgba(16, 185, 129, 0.1) !important;
+  color: #047857 !important;
+}
+
+/* Modular glass cards inside panels */
+.block {
+  padding: 16px !important;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.08) !important;
+}
+
+.heading {
   display: flex !important;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: baseline !important;
+  justify-content: space-between !important;
+  margin-bottom: 12px !important;
+}
+.heading > span {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+}
+.heading small {
+  color: #64748b !important;
+  font-size: 8px !important;
 }
 
 .metrics, .profile-summary, .evidence-grid {
   background: transparent !important;
   gap: 8px !important;
   border: none !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
 }
 .metrics div, .profile-summary div, .evidence-grid div {
-  background: rgba(26, 41, 36, 0.4) !important;
-  border: 1px solid rgba(66, 197, 138, 0.12) !important;
-  border-radius: 8px !important;
+  background: rgba(16, 185, 129, 0.05) !important;
+  border: 1px solid rgba(16, 185, 129, 0.12) !important;
+  border-radius: 10px !important;
   padding: 10px 6px !important;
   text-align: center !important;
+  transition: all 0.2s ease !important;
 }
 .metrics div:last-child, .profile-summary div:last-child {
-  border-right: 1px solid rgba(66, 197, 138, 0.12) !important;
+  border-right: 1px solid rgba(16, 185, 129, 0.12) !important;
+}
+.metrics div:hover, .profile-summary div:hover, .evidence-grid div:hover {
+  background: rgba(16, 185, 129, 0.1) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.08);
+}
+.metrics span, .profile-summary span, .evidence-grid span {
+  color: #475569 !important;
+}
+.metrics strong, .profile-summary strong {
+  color: #0f172a !important;
+}
+
+.layers label {
+  color: #334155 !important;
+}
+
+/* Timeline bright theme overrides */
+.timeline::before {
+  border-left: 1px solid rgba(16, 185, 129, 0.25) !important;
+}
+.timeline-item {
+  border-radius: 10px !important;
+  border: 1px solid rgba(16, 185, 129, 0.05) !important;
+  background: rgba(255, 255, 255, 0.4) !important;
+  margin-bottom: 4px;
+}
+.timeline-item:hover {
+  background: rgba(16, 185, 129, 0.08) !important;
+  border-color: rgba(16, 185, 129, 0.2) !important;
+  transform: translateX(4px) !important;
+}
+.timeline-item.active {
+  background: rgba(16, 185, 129, 0.12) !important;
+  border-color: #10b981 !important;
+}
+.timeline-number {
+  background: #f1f5f9 !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #475569 !important;
+}
+.timeline-item.active .timeline-number {
+  background: #10b981 !important;
+  border-color: #10b981 !important;
+  color: white !important;
+}
+.timeline-copy strong {
+  color: #0f172a !important;
+}
+.timeline-copy span {
+  color: #64748b !important;
+}
+
+.api-row input {
+  color: #0f172a !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  border-radius: 6px !important;
+}
+.api-row input:focus {
+  border-color: #10b981 !important;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1) !important;
 }
 
 button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-actions button, .member-actions a, .lightbox-toolbar button, .view-chips button, .terrain-chip, .timeline-item, .history-item, .member-card {
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
-.icon-btn:hover, .api-row button:hover, .team-head-actions button:hover, .lightbox-toolbar button:hover {
-  background: rgba(66, 197, 138, 0.15) !important;
-  border-color: var(--green) !important;
-  color: var(--green) !important;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(66, 197, 138, 0.15);
+.icon-btn, .api-row button, .sync-actions button, .member-actions button, .member-actions a, .lightbox-toolbar button {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  color: #334155 !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+}
+.icon-btn:hover, .api-row button:hover, .sync-actions button:hover, .member-actions button:hover, .member-actions a:hover, .lightbox-toolbar button:hover {
+  background: rgba(16, 185, 129, 0.1) !important;
+  border-color: #10b981 !important;
+  color: #047857 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15) !important;
 }
 
-.mode-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(66, 197, 138, 0.3);
-  opacity: 0.95;
+.mode-btn, .team-btn, .export-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2) !important;
 }
-
-.view-chips button:hover, .terrain-chip:hover {
-  background: rgba(66, 197, 138, 0.1) !important;
-  color: var(--green) !important;
-}
-
-.field-form input, .field-form textarea, .message-composer select, .message-composer textarea, .api-row input, .team-head-actions input {
-  background: rgba(16, 26, 23, 0.8) !important;
-  border: 1px solid rgba(66, 197, 138, 0.15) !important;
-  border-radius: 6px !important;
-  transition: all 0.2s ease;
-  color: #f3f4f6 !important;
-}
-.field-form input:focus, .field-form textarea:focus, .message-composer select:focus, .message-composer textarea:focus, .api-row input:focus, .team-head-actions input:focus {
-  border-color: var(--green) !important;
-  box-shadow: 0 0 8px rgba(66, 197, 138, 0.2);
-  outline: none;
-}
-
-.timeline-item:hover, .timeline-item.active {
-  background: rgba(66, 197, 138, 0.1) !important;
-  border-color: rgba(66, 197, 138, 0.3) !important;
-  color: #fff !important;
-  transform: translateX(4px);
-}
-.timeline-item.active {
-  background: rgba(66, 197, 138, 0.15) !important;
-  border-color: var(--green) !important;
-}
-.timeline-item.active .timeline-number {
-  box-shadow: 0 0 10px rgba(66, 197, 138, 0.4);
-}
-
-.history-item {
-  background: rgba(27, 42, 37, 0.4) !important;
-  border: 1px solid rgba(66, 197, 138, 0.1) !important;
-}
-.history-item:hover {
-  background: rgba(66, 197, 138, 0.08) !important;
-  border-color: rgba(66, 197, 138, 0.3) !important;
-  transform: translateX(4px);
+.mode-btn:hover, .team-btn:hover, .export-btn:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.3) !important;
+  opacity: 0.95 !important;
 }
 
 .station-photo {
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid rgba(66, 197, 138, 0.2) !important;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(16, 185, 129, 0.25) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 .station-photo:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02) !important;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.15) !important;
+}
+
+.evidence h2 {
+  color: #0f172a !important;
+}
+.evidence p {
+  color: #475569 !important;
+}
+.field-form label {
+  color: #475569 !important;
+}
+.field-form input, .field-form textarea {
+  color: #0f172a !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  border-radius: 8px !important;
+  padding: 8px 10px !important;
+}
+.field-form input:focus, .field-form textarea:focus {
+  border-color: #10b981 !important;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15) !important;
+  outline: none !important;
+}
+
+.overlap-value strong {
+  color: #0f172a !important;
+}
+.overlap-value span {
+  color: #64748b !important;
 }

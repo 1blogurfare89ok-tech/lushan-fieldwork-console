@@ -343,7 +343,12 @@
     font-size: 13px !important;
   }
   .team-head-actions label {
-    display: none !important; /* Hide admin token label/input on mobile header */
+    display: flex !important;
+    font-size: 0 !important;
+  }
+  .team-head-actions label input {
+    width: 95px !important;
+    font-size: 11px !important;
   }
 
   /* Main scroll-free container for team console */

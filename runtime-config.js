@@ -5,12 +5,13 @@ window.LUSHAN_CONFIG = Object.freeze({
 });
 document.addEventListener("DOMContentLoaded", () => {
   const input = document.querySelector("#apiBase");
-  const saved = localStorage.getItem("lushanApiBase");
-  if (input && !saved) {
+  if (input) {
     if (window.location.pathname.includes("/console/") || (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1" && window.location.hostname !== "")) {
       input.value = window.location.origin;
+      localStorage.setItem("lushanApiBase", window.location.origin);
     } else {
-      input.value = window.LUSHAN_CONFIG.apiBase;
+      const saved = localStorage.getItem("lushanApiBase");
+      input.value = saved || window.LUSHAN_CONFIG.apiBase;
     }
   }
 });

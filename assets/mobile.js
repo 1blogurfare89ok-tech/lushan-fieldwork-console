@@ -84,5 +84,36 @@ document.addEventListener("DOMContentLoaded", () => {
   if (elevLabel) {
     elevLabel.textContent = window.innerWidth <= 760 ? "点击位置高程" : "鼠标悬停高程";
   }
+
+  // Parse URL query parameters for auto-configuration from Android App
+  const urlParams = new URLSearchParams(window.location.search);
+  const tokenParam = urlParams.get('token');
+  const apiParam = urlParams.get('api');
+  const tabParam = urlParams.get('tab');
+
+  if (tokenParam) {
+    sessionStorage.setItem("lushanTeamAdminToken", tokenParam);
+    const tokenInput = document.querySelector("#teamAdminToken");
+    if (tokenInput) {
+      tokenInput.value = tokenParam;
+    }
+  }
+
+  if (apiParam) {
+    localStorage.setItem("lushanApiBase", apiParam);
+    const apiInput = document.querySelector("#apiBase");
+    if (apiInput) {
+      apiInput.value = apiParam;
+    }
+  }
+
+  if (tabParam === 'team') {
+    setTimeout(() => {
+      const openTeamBtn = document.querySelector("#openTeam");
+      if (openTeamBtn) {
+        openTeamBtn.click();
+      }
+    }, 300);
+  }
 });
 

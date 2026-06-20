@@ -80,72 +80,72 @@
 
 .team-console {
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 
 .team-header {
-  background: rgba(255, 255, 255, 0.8) !important;
-  border-bottom: 1px solid rgba(16, 185, 129, 0.15) !important;
+  background: rgba(23, 34, 31, 0.7) !important;
+  border-bottom: 1px solid rgba(66, 197, 138, 0.15) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
 }
 .team-header strong {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 .team-header small {
   color: #059669 !important;
 }
 
 .team-head-actions label {
-  color: #475569 !important;
+  color: #9ca3af !important;
 }
 .team-head-actions input {
-  color: #0f172a !important;
-  background: #ffffff !important;
-  border: 1px solid rgba(16, 185, 129, 0.25) !important;
+  color: #f3f4f6 !important;
+  background: rgba(16, 26, 23, 0.8) !important;
+  border: 1px solid rgba(66, 197, 138, 0.25) !important;
   border-radius: 6px !important;
 }
 .team-head-actions input:focus {
-  border-color: #10b981 !important;
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1) !important;
+  border-color: #42c58a !important;
+  box-shadow: 0 0 0 3px rgba(66, 197, 138, 0.15) !important;
   outline: none !important;
 }
 
 .ws-status {
-  color: #475569 !important;
-  background: rgba(255, 255, 255, 0.6) !important;
+  color: #9ca3af !important;
+  background: rgba(23, 34, 31, 0.5) !important;
   padding: 4px 10px !important;
   border-radius: 12px !important;
   border: 1px solid rgba(0,0,0,0.05) !important;
 }
 
 .team-members, .team-comms {
-  background: rgba(255, 255, 255, 0.4) !important;
-  border-color: rgba(16, 185, 129, 0.15) !important;
+  background: rgba(27, 42, 37, 0.4) !important;
+  border-color: rgba(66, 197, 138, 0.15) !important;
 }
 
 .team-section-title {
-  border-bottom: 1px solid rgba(16, 185, 129, 0.15) !important;
+  border-bottom: 1px solid rgba(66, 197, 138, 0.15) !important;
 }
 .team-section-title span {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 .team-section-title small {
-  color: #64748b !important;
+  color: #9ca3af !important;
 }
 
 .member-card {
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
   border-radius: 12px !important;
-  background: rgba(255, 255, 255, 0.6) !important;
-  border: 1px solid rgba(16, 185, 129, 0.12) !important;
-  color: #334155 !important;
+  background: rgba(23, 34, 31, 0.5) !important;
+  border: 1px solid rgba(66, 197, 138, 0.15) !important;
+  color: #c8d3cf !important;
 }
 .member-card:hover {
-  background: rgba(255, 255, 255, 0.9) !important;
-  border-color: #10b981 !important;
+  background: rgba(34, 49, 45, 0.8) !important;
+  border-color: #42c58a !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.08) !important;
+  box-shadow: 0 6px 18px rgba(66, 197, 138, 0.1) !important;
 }
 .member-card.alerting {
   border-color: var(--coral) !important;
@@ -153,56 +153,56 @@
   box-shadow: 0 0 12px rgba(239, 68, 68, 0.15) !important;
 }
 .member-avatar {
-  background: rgba(16, 185, 129, 0.1) !important;
+  background: rgba(66, 197, 138, 0.15) !important;
   color: #047857 !important;
-  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  border: 1px solid rgba(66, 197, 138, 0.2) !important;
 }
 .member-main strong {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 .member-main span {
-  color: #64748b !important;
+  color: #9ca3af !important;
 }
 .member-meta strong {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 .member-meta span {
-  color: #64748b !important;
+  color: #9ca3af !important;
 }
 
 .message {
   border-radius: 8px !important;
-  background: rgba(255, 255, 255, 0.6) !important;
-  border-left: 3px solid rgba(16, 185, 129, 0.25) !important;
-  color: #334155 !important;
+  background: rgba(23, 34, 31, 0.5) !important;
+  border-left: 3px solid rgba(66, 197, 138, 0.25) !important;
+  color: #c8d3cf !important;
   box-shadow: 0 2px 8px rgba(0,0,0,0.02) !important;
 }
 .message.control {
   border-left-color: var(--green) !important;
-  background: rgba(16, 185, 129, 0.08) !important;
+  background: rgba(66, 197, 138, 0.1) !important;
 }
 .message strong {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 .message p {
-  color: #334155 !important;
+  color: #c8d3cf !important;
 }
 .message span {
-  color: #64748b !important;
+  color: #9ca3af !important;
 }
 
 .message-composer {
-  border-top: 1px solid rgba(16, 185, 129, 0.15) !important;
+  border-top: 1px solid rgba(66, 197, 138, 0.15) !important;
 }
 .message-composer select, .message-composer textarea {
-  color: #0f172a !important;
-  background: #ffffff !important;
-  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  color: #f3f4f6 !important;
+  background: rgba(16, 26, 23, 0.8) !important;
+  border: 1px solid rgba(66, 197, 138, 0.2) !important;
   border-radius: 8px !important;
 }
 .message-composer select:focus, .message-composer textarea:focus {
-  border-color: #10b981 !important;
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1) !important;
+  border-color: #42c58a !important;
+  box-shadow: 0 0 0 3px rgba(66, 197, 138, 0.15) !important;
 }
 
 .sos-banner {
@@ -217,11 +217,11 @@
   color: #991b1b !important;
 }
 .sos-banner span {
-  color: #ef4444 !important;
+  color: #e4725c !important;
 }
 .sos-banner button {
-  background: #ef4444 !important;
-  border: 1px solid #ef4444 !important;
+  background: #e4725c !important;
+  border: 1px solid #e4725c !important;
   color: white !important;
   border-radius: 8px !important;
   font-weight: 600 !important;

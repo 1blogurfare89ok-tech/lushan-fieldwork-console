@@ -30,17 +30,17 @@
 
 /* --- BRIGHT THEME TERRAIN OVERRIDES --- */
 .map-stage {
-  background: #f1f5f9 !important;
+  background: #1a2723 !important;
 }
 
 .compass, .terrain-readout, .map-scale, .view-chips, .terrain-toolbar, .terrain-note, .terrain-header > div {
-  background: rgba(255, 255, 255, 0.8) !important;
+  background: rgba(23, 34, 31, 0.7) !important;
   backdrop-filter: blur(16px) !important;
   -webkit-backdrop-filter: blur(16px) !important;
-  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  border: 1px solid rgba(66, 197, 138, 0.2) !important;
   border-radius: 12px !important;
   box-shadow: 0 8px 32px 0 rgba(15, 23, 42, 0.08) !important;
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 
 .compass {
@@ -54,36 +54,36 @@
   align-items: center !important;
 }
 .compass svg {
-  color: #ef4444 !important; /* Vibrant Red Needle */
+  color: #e4725c !important; /* Vibrant Red Needle */
 }
 .compass span {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
   font-size: 9px !important;
   font-weight: 800 !important;
   margin-top: -2px !important;
 }
 
 .terrain-readout strong {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 .terrain-readout span {
-  color: #475569 !important;
+  color: #9ca3af !important;
 }
 
 .map-scale {
-  color: #334155 !important;
+  color: #c8d3cf !important;
 }
 .map-scale span {
-  border-color: #334155 !important;
+  border-color: #c8d3cf !important;
 }
 
 .view-chips button {
-  color: #475569 !important;
+  color: #9ca3af !important;
   border-radius: 16px !important;
 }
 .view-chips button.active {
   color: white !important;
-  background: #10b981 !important;
+  background: #42c58a !important;
   font-weight: 700 !important;
 }
 
@@ -91,17 +91,17 @@
   border-radius: 16px !important;
 }
 .terrain-chip.active {
-  background: #10b981 !important;
+  background: #42c58a !important;
   color: white !important;
 }
 
 .terrain-header > div {
-  border-left: 3px solid #10b981 !important;
-  color: #0f172a !important;
+  border-left: 3px solid #42c58a !important;
+  color: #f3f4f6 !important;
 }
 .terrain-header small {
   color: #059669 !important;
 }
 .terrain-header strong {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }

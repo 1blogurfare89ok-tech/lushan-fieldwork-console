@@ -12,7 +12,7 @@
   }
 
   body {
-    background-color: #f8fafc !important;
+    background-color: #0b1311 !important;
     user-select: none;
     -webkit-user-select: none;
   }
@@ -34,10 +34,10 @@
     height: 58px !important;
     z-index: 4000 !important;
     padding: 0 8px !important;
-    background: rgba(255, 255, 255, 0.85) !important;
+    background: rgba(11, 19, 17, 0.8) !important;
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    border-bottom: 1px solid rgba(16, 185, 129, 0.15) !important;
+    border-bottom: 1px solid rgba(66, 197, 138, 0.15) !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02) !important;
     display: flex !important;
     align-items: center !important;
@@ -83,7 +83,7 @@
     gap: 2px !important;
     padding: 2px !important;
     border-radius: 10px !important;
-    background: #f1f5f9 !important;
+    background: #1a2723 !important;
   }
   .mode-switch button {
     height: 28px !important;
@@ -115,7 +115,7 @@
     padding: 0 !important;
     margin: 0 !important;
     overflow: visible !important;
-    background: #f8fafc !important;
+    background: #0b1311 !important;
   }
 
   /* Map View Stage */
@@ -135,14 +135,14 @@
   .map-title {
     top: 10px !important;
     padding: 6px 12px !important;
-    background: rgba(255, 255, 255, 0.9) !important;
-    border: 1px solid rgba(16, 185, 129, 0.2) !important;
+    background: rgba(34, 49, 45, 0.8) !important;
+    border: 1px solid rgba(66, 197, 138, 0.2) !important;
     border-radius: 10px !important;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
   }
   .map-title span {
     font-size: 11px !important;
-    color: #0f172a !important;
+    color: #f3f4f6 !important;
   }
   .map-title small {
     font-size: 8px !important;
@@ -230,7 +230,7 @@
   /* Overlay blocks formatting on mobile */
   .left-rail .block, .right-rail .block {
     padding: 16px 14px !important;
-    border-bottom: 1px solid rgba(16, 185, 129, 0.15) !important;
+    border-bottom: 1px solid rgba(66, 197, 138, 0.15) !important;
     border-top: none !important;
     background: transparent !important;
     box-shadow: none !important;
@@ -259,10 +259,10 @@
     left: 0 !important;
     right: 0 !important;
     height: 50px !important;
-    background: rgba(255, 255, 255, 0.9) !important;
+    background: rgba(34, 49, 45, 0.8) !important;
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    border-top: 1px solid rgba(16, 185, 129, 0.15) !important;
+    border-top: 1px solid rgba(66, 197, 138, 0.15) !important;
     display: flex !important;
     justify-content: space-around !important;
     align-items: center !important;
@@ -280,7 +280,7 @@
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
-    color: #64748b !important;
+    color: #9ca3af !important;
     gap: 2px !important;
     padding: 4px 0 !important;
     cursor: pointer !important;
@@ -299,7 +299,7 @@
   }
 
   .tab-btn.active {
-    color: #10b981 !important; /* Active emerald green */
+    color: #42c58a !important; /* Active emerald green */
   }
 
   /* ==========================================
@@ -315,7 +315,7 @@
     height: auto !important;
     min-height: calc(100dvh - 58px - 50px - env(safe-area-inset-bottom)) !important;
     z-index: 4500 !important;
-    background: #f8fafc !important;
+    background: #0b1311 !important;
     border: none !important;
     transform: none !important;
     box-shadow: none !important;
@@ -336,8 +336,8 @@
     height: 52px !important;
     padding: 0 10px !important;
     flex-shrink: 0 !important;
-    background: #ffffff !important;
-    border-bottom: 1px solid rgba(16, 185, 129, 0.15) !important;
+    background: rgba(16, 26, 23, 0.8) !important;
+    border-bottom: 1px solid rgba(66, 197, 138, 0.15) !important;
   }
   .team-header strong {
     font-size: 13px !important;
@@ -357,7 +357,7 @@
     height: auto !important;
     min-height: 0 !important;
     overflow: visible !important;
-    background: #f8fafc !important;
+    background: #0b1311 !important;
   }
 
   /* Compact members list at the top */
@@ -367,8 +367,8 @@
     height: auto !important;
     flex-shrink: 0 !important;
     border-top: none !important;
-    border-bottom: 1px solid rgba(16, 185, 129, 0.12) !important;
-    background: #ffffff !important;
+    border-bottom: 1px solid rgba(66, 197, 138, 0.15) !important;
+    background: rgba(16, 26, 23, 0.8) !important;
     padding: 6px 10px !important;
   }
   .team-members .team-section-title {
@@ -389,8 +389,8 @@
     font-size: 10px !important;
     border-radius: 8px !important;
     gap: 6px !important;
-    background: #f1f5f9 !important;
-    border: 1px solid rgba(16, 185, 129, 0.08) !important;
+    background: #1a2723 !important;
+    border: 1px solid rgba(66, 197, 138, 0.1) !important;
   }
   .member-avatar {
     width: 24px !important;
@@ -404,7 +404,7 @@
     inset: auto !important;
     height: 25vh !important;
     flex-shrink: 0 !important;
-    border-bottom: 1px solid rgba(16, 185, 129, 0.15) !important;
+    border-bottom: 1px solid rgba(66, 197, 138, 0.15) !important;
   }
 
   /* Chat feed taking up all remaining space */
@@ -418,15 +418,15 @@
     min-height: 0 !important;
     height: auto !important;
     border: none !important;
-    background: #f8fafc !important;
+    background: #0b1311 !important;
     margin: 0 !important;
     padding: 0 !important;
   }
   .team-comms .team-section-title {
     height: 30px !important;
     padding: 0 12px !important;
-    border-bottom: 1px solid rgba(16, 185, 129, 0.08) !important;
-    background: #ffffff !important;
+    border-bottom: 1px solid rgba(66, 197, 138, 0.1) !important;
+    background: rgba(16, 26, 23, 0.8) !important;
     flex-shrink: 0 !important;
   }
 
@@ -436,7 +436,7 @@
     max-height: 350px !important;
     overflow-y: auto !important;
     padding: 10px 12px !important;
-    background: #f8fafc !important;
+    background: #0b1311 !important;
     display: flex !important;
     flex-direction: column !important;
     gap: 8px !important;
@@ -445,13 +445,13 @@
     padding: 8px 10px !important;
     font-size: 11px !important;
     border-radius: 8px !important;
-    background: #ffffff !important;
-    border-left: 3px solid rgba(16, 185, 129, 0.3) !important;
+    background: rgba(16, 26, 23, 0.8) !important;
+    border-left: 3px solid rgba(66, 197, 138, 0.3) !important;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02) !important;
   }
   .message.control {
-    background: rgba(16, 185, 129, 0.08) !important;
-    border-left-color: #10b981 !important;
+    background: rgba(66, 197, 138, 0.1) !important;
+    border-left-color: #42c58a !important;
   }
 
   /* WeChat-like pinned chat composer at bottom */
@@ -460,8 +460,8 @@
     bottom: auto !important;
     flex-shrink: 0 !important;
     padding: 8px !important;
-    background: #ffffff !important;
-    border-top: 1px solid rgba(16, 185, 129, 0.12) !important;
+    background: rgba(16, 26, 23, 0.8) !important;
+    border-top: 1px solid rgba(66, 197, 138, 0.15) !important;
     display: grid !important;
     grid-template-columns: 1fr auto !important;
     gap: 6px !important;
@@ -473,8 +473,8 @@
     height: 32px !important;
     padding: 4px 8px !important;
     font-size: 11px !important;
-    background: #f1f5f9 !important;
-    border: 1px solid rgba(16, 185, 129, 0.1) !important;
+    background: #1a2723 !important;
+    border: 1px solid rgba(66, 197, 138, 0.15) !important;
     border-radius: 6px !important;
   }
   .message-composer textarea {
@@ -483,8 +483,8 @@
     height: 36px !important;
     padding: 8px 10px !important;
     font-size: 11px !important;
-    background: #f8fafc !important;
-    border: 1px solid rgba(16, 185, 129, 0.15) !important;
+    background: #0b1311 !important;
+    border: 1px solid rgba(66, 197, 138, 0.15) !important;
     border-radius: 8px !important;
     resize: none !important;
   }
@@ -500,8 +500,8 @@
     align-items: center !important;
     justify-content: center !important;
     gap: 4px !important;
-    background: #10b981 !important;
-    color: #ffffff !important;
+    background: #42c58a !important;
+    color: rgba(16, 26, 23, 0.8) !important;
   }
   .message-composer button i {
     width: 12px !important;

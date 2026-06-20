@@ -4,19 +4,19 @@
 
 :root {
   font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  --panel: rgba(255, 255, 255, 0.8) !important;
-  --line: rgba(16, 185, 129, 0.15) !important;
-  --muted: #475569 !important;
-  --green: #10b981 !important;
-  --ice: #0ea5e9 !important;
-  --amber: #f59e0b !important;
-  --coral: #ef4444 !important;
-  --bg-deep: #f8fafc !important;
+  --panel: rgba(23, 34, 31, 0.7) !important;
+  --line: rgba(66, 197, 138, 0.15) !important;
+  --muted: #9ca3af !important;
+  --green: #42c58a !important;
+  --ice: #79bfe7 !important;
+  --amber: #e8b04b !important;
+  --coral: #e4725c !important;
+  --bg-deep: #0b1311 !important;
 }
 
 body {
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%) !important;
-  color: #0f172a !important;
+  background: var(--bg-deep) !important;
+  color: #f3f4f6 !important;
   font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   letter-spacing: -0.011em !important;
 }
@@ -26,31 +26,31 @@ body {
 }
 
 .topbar {
-  background: rgba(255, 255, 255, 0.72) !important;
+  background: rgba(11, 19, 17, 0.8) !important;
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid rgba(16, 185, 129, 0.15) !important;
+  border-bottom: 1px solid rgba(66, 197, 138, 0.15) !important;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03) !important;
 }
 
 .brand-mark {
-  background: rgba(16, 185, 129, 0.1) !important;
-  border: 1px solid rgba(16, 185, 129, 0.3) !important;
+  background: rgba(66, 197, 138, 0.15) !important;
+  border: 1px solid rgba(66, 197, 138, 0.3) !important;
   color: #059669 !important;
   border-radius: 8px !important;
 }
 
 .brand strong {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 
 .brand small {
-  color: #475569 !important;
+  color: #9ca3af !important;
 }
 
 .status {
-  color: #334155 !important;
-  background: rgba(255, 255, 255, 0.8) !important;
+  color: #c8d3cf !important;
+  background: rgba(23, 34, 31, 0.7) !important;
   padding: 6px 12px !important;
   border-radius: 20px !important;
   border: 1px solid rgba(0, 0, 0, 0.05) !important;
@@ -59,8 +59,8 @@ body {
 }
 
 .status b {
-  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2) !important;
-  background: #10b981 !important;
+  box-shadow: 0 0 0 4px rgba(66, 197, 138, 0.2) !important;
+  background: #42c58a !important;
 }
 
 /* Floating panels for WebGIS Cockpit */
@@ -91,10 +91,10 @@ body {
   width: 310px !important;
   margin: 0 !important;
   border-radius: 16px !important;
-  border: 1px solid rgba(16, 185, 129, 0.15) !important;
+  border: 1px solid rgba(66, 197, 138, 0.15) !important;
   box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08) !important;
   overflow-y: auto !important;
-  background: rgba(255, 255, 255, 0.82) !important;
+  background: var(--panel) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
   scrollbar-width: thin;
@@ -112,7 +112,7 @@ body {
 .right-rail::-webkit-scrollbar-thumb, 
 .message-feed::-webkit-scrollbar-thumb, 
 .history-list::-webkit-scrollbar-thumb {
-  background: rgba(16, 185, 129, 0.25) !important;
+  background: rgba(66, 197, 138, 0.25) !important;
   border-radius: 3px !important;
 }
 .left-rail::-webkit-scrollbar-thumb:hover, 
@@ -135,35 +135,35 @@ body {
 
 /* Style Leaflet controls to match glassmorphism */
 .leaflet-control-layers, .leaflet-bar, .leaflet-control-zoom-in, .leaflet-control-zoom-out {
-  background: rgba(255, 255, 255, 0.85) !important;
+  background: rgba(11, 19, 17, 0.8) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
-  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  border: 1px solid rgba(66, 197, 138, 0.2) !important;
   border-radius: 8px !important;
   box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06) !important;
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 .leaflet-bar {
   border: none !important;
 }
 .leaflet-bar a {
   background: transparent !important;
-  color: #0f172a !important;
-  border-bottom: 1px solid rgba(16, 185, 129, 0.1) !important;
+  color: #f3f4f6 !important;
+  border-bottom: 1px solid rgba(66, 197, 138, 0.15) !important;
   transition: all 0.2s ease !important;
 }
 .leaflet-bar a:last-child {
   border-bottom: none !important;
 }
 .leaflet-bar a:hover {
-  background: rgba(16, 185, 129, 0.1) !important;
+  background: rgba(66, 197, 138, 0.15) !important;
   color: #047857 !important;
 }
 
 /* Modular glass cards inside panels */
 .block {
   padding: 16px !important;
-  border-bottom: 1px solid rgba(16, 185, 129, 0.08) !important;
+  border-bottom: 1px solid rgba(66, 197, 138, 0.1) !important;
 }
 
 .heading {
@@ -175,10 +175,10 @@ body {
 .heading > span {
   font-size: 13px !important;
   font-weight: 700 !important;
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 .heading small {
-  color: #64748b !important;
+  color: #9ca3af !important;
   font-size: 8px !important;
 }
 
@@ -190,77 +190,77 @@ body {
   grid-template-columns: repeat(3, 1fr) !important;
 }
 .metrics div, .profile-summary div, .evidence-grid div {
-  background: rgba(16, 185, 129, 0.05) !important;
-  border: 1px solid rgba(16, 185, 129, 0.12) !important;
+  background: rgba(26, 41, 36, 0.4) !important;
+  border: 1px solid rgba(66, 197, 138, 0.15) !important;
   border-radius: 10px !important;
   padding: 10px 6px !important;
   text-align: center !important;
   transition: all 0.2s ease !important;
 }
 .metrics div:last-child, .profile-summary div:last-child {
-  border-right: 1px solid rgba(16, 185, 129, 0.12) !important;
+  border-right: 1px solid rgba(66, 197, 138, 0.15) !important;
 }
 .metrics div:hover, .profile-summary div:hover, .evidence-grid div:hover {
-  background: rgba(16, 185, 129, 0.1) !important;
+  background: rgba(66, 197, 138, 0.15) !important;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.08);
 }
 .metrics span, .profile-summary span, .evidence-grid span {
-  color: #475569 !important;
+  color: #9ca3af !important;
 }
 .metrics strong, .profile-summary strong {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 
 .layers label {
-  color: #334155 !important;
+  color: #c8d3cf !important;
 }
 
 /* Timeline bright theme overrides */
 .timeline::before {
-  border-left: 1px solid rgba(16, 185, 129, 0.25) !important;
+  border-left: 1px solid rgba(66, 197, 138, 0.25) !important;
 }
 .timeline-item {
   border-radius: 10px !important;
-  border: 1px solid rgba(16, 185, 129, 0.05) !important;
-  background: rgba(255, 255, 255, 0.4) !important;
+  border: 1px solid rgba(26, 41, 36, 0.4) !important;
+  background: rgba(27, 42, 37, 0.4) !important;
   margin-bottom: 4px;
 }
 .timeline-item:hover {
-  background: rgba(16, 185, 129, 0.08) !important;
-  border-color: rgba(16, 185, 129, 0.2) !important;
+  background: rgba(66, 197, 138, 0.1) !important;
+  border-color: rgba(66, 197, 138, 0.2) !important;
   transform: translateX(4px) !important;
 }
 .timeline-item.active {
-  background: rgba(16, 185, 129, 0.12) !important;
-  border-color: #10b981 !important;
+  background: rgba(66, 197, 138, 0.15) !important;
+  border-color: #42c58a !important;
 }
 .timeline-number {
-  background: #f1f5f9 !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #475569 !important;
+  background: #1a2723 !important;
+  border: 1px solid #5f7d72 !important;
+  color: #9ca3af !important;
 }
 .timeline-item.active .timeline-number {
-  background: #10b981 !important;
-  border-color: #10b981 !important;
+  background: #42c58a !important;
+  border-color: #42c58a !important;
   color: white !important;
 }
 .timeline-copy strong {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 .timeline-copy span {
-  color: #64748b !important;
+  color: #9ca3af !important;
 }
 
 .api-row input {
-  color: #0f172a !important;
-  background: #ffffff !important;
-  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  color: #f3f4f6 !important;
+  background: rgba(16, 26, 23, 0.8) !important;
+  border: 1px solid rgba(66, 197, 138, 0.2) !important;
   border-radius: 6px !important;
 }
 .api-row input:focus {
-  border-color: #10b981 !important;
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1) !important;
+  border-color: #42c58a !important;
+  box-shadow: 0 0 0 3px rgba(66, 197, 138, 0.15) !important;
 }
 
 button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-actions button, .member-actions a, .lightbox-toolbar button, .view-chips button, .terrain-chip, .timeline-item, .history-item, .member-card {
@@ -268,18 +268,18 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
 }
 
 .icon-btn, .api-row button, .sync-actions button, .member-actions button, .member-actions a, .lightbox-toolbar button {
-  background: rgba(255, 255, 255, 0.9) !important;
-  border: 1px solid rgba(16, 185, 129, 0.2) !important;
-  color: #334155 !important;
+  background: rgba(34, 49, 45, 0.8) !important;
+  border: 1px solid rgba(66, 197, 138, 0.2) !important;
+  color: #c8d3cf !important;
   border-radius: 8px !important;
   font-weight: 500 !important;
 }
 .icon-btn:hover, .api-row button:hover, .sync-actions button:hover, .member-actions button:hover, .member-actions a:hover, .lightbox-toolbar button:hover {
-  background: rgba(16, 185, 129, 0.1) !important;
-  border-color: #10b981 !important;
+  background: rgba(66, 197, 138, 0.15) !important;
+  border-color: #42c58a !important;
   color: #047857 !important;
   transform: translateY(-1px) !important;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15) !important;
+  box-shadow: 0 4px 12px rgba(66, 197, 138, 0.15) !important;
 }
 
 .mode-btn, .team-btn, .export-btn {
@@ -288,52 +288,52 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
   color: white !important;
   font-weight: 600 !important;
   border-radius: 10px !important;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2) !important;
+  box-shadow: 0 4px 12px rgba(66, 197, 138, 0.2) !important;
 }
 .mode-btn:hover, .team-btn:hover, .export-btn:hover {
   transform: translateY(-1px) !important;
-  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.3) !important;
+  box-shadow: 0 6px 16px rgba(66, 197, 138, 0.3) !important;
   opacity: 0.95 !important;
 }
 
 .station-photo {
   border-radius: 12px !important;
   overflow: hidden !important;
-  border: 1px solid rgba(16, 185, 129, 0.25) !important;
+  border: 1px solid rgba(66, 197, 138, 0.25) !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 .station-photo:hover {
   transform: scale(1.02) !important;
-  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.15) !important;
+  box-shadow: 0 8px 24px rgba(66, 197, 138, 0.15) !important;
 }
 
 .evidence h2 {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 .evidence p {
-  color: #475569 !important;
+  color: #9ca3af !important;
 }
 .field-form label {
-  color: #475569 !important;
+  color: #9ca3af !important;
 }
 .field-form input, .field-form textarea {
-  color: #0f172a !important;
-  background: #ffffff !important;
-  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  color: #f3f4f6 !important;
+  background: rgba(16, 26, 23, 0.8) !important;
+  border: 1px solid rgba(66, 197, 138, 0.2) !important;
   border-radius: 8px !important;
   padding: 8px 10px !important;
 }
 .field-form input:focus, .field-form textarea:focus {
-  border-color: #10b981 !important;
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15) !important;
+  border-color: #42c58a !important;
+  box-shadow: 0 0 0 3px rgba(66, 197, 138, 0.15) !important;
   outline: none !important;
 }
 
 .overlap-value strong {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 .overlap-value span {
-  color: #64748b !important;
+  color: #9ca3af !important;
 }
 
 /* --- STATION MEDIA GRID & OVERVIEW MAP OVERRIDES --- */
@@ -349,15 +349,15 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
   position: relative !important;
   overflow: hidden !important;
   border-radius: 12px !important;
-  border: 1px solid rgba(16, 185, 129, 0.25) !important;
-  background: #f1f5f9 !important;
+  border: 1px solid rgba(66, 197, 138, 0.25) !important;
+  background: #1a2723 !important;
   cursor: pointer !important;
   transition: all 0.25s ease !important;
 }
 .station-overview:hover {
   transform: scale(1.02) !important;
-  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.12) !important;
-  border-color: #10b981 !important;
+  box-shadow: 0 8px 20px rgba(66, 197, 138, 0.15) !important;
+  border-color: #42c58a !important;
 }
 .station-overview>div {
   position: absolute !important;
@@ -373,15 +373,15 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
   position: relative !important;
   overflow: hidden !important;
   border-radius: 12px !important;
-  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  border: 1px solid rgba(66, 197, 138, 0.2) !important;
   background: rgba(16, 185, 129, 0.02) !important;
   cursor: pointer !important;
   transition: all 0.25s ease !important;
 }
 .station-photo:hover {
   transform: scale(1.02) !important;
-  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.12) !important;
-  border-color: #10b981 !important;
+  box-shadow: 0 8px 20px rgba(66, 197, 138, 0.15) !important;
+  border-color: #42c58a !important;
 }
 .station-photo>div {
   display: none !important;
@@ -394,17 +394,17 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
   flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
-  color: #475569 !important;
+  color: #9ca3af !important;
   font-size: 9px !important;
   gap: 5px !important;
-  border: 1px dashed rgba(16, 185, 129, 0.3) !important;
+  border: 1px dashed rgba(66, 197, 138, 0.3) !important;
   border-radius: 11px !important;
   background: rgba(16, 185, 129, 0.02) !important;
 }
 .photo-placeholder svg {
   width: 18px !important;
   height: 18px !important;
-  color: #10b981 !important;
+  color: #42c58a !important;
   opacity: 0.85 !important;
 }
 
@@ -424,7 +424,7 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
   top: 6px !important;
   z-index: 4 !important;
   padding: 2px 6px !important;
-  background: rgba(15, 23, 42, 0.6) !important;
+  background: rgba(11, 19, 17, 0.8) !important;
   color: white !important;
   font-size: 8px !important;
   font-weight: 500 !important;
@@ -438,7 +438,7 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
   bottom: 8px !important;
   z-index: 4 !important;
   padding: 4px 8px !important;
-  background: #f59e0b !important;
+  background: #e8b04b !important;
   color: white !important;
   font-size: 9px !important;
   font-weight: 800 !important;
@@ -447,35 +447,35 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
 
 /* --- ADDITIONAL FONT & BACKING CONTRAST FIXES --- */
 .coordinates, .map-label {
-  background: rgba(255, 255, 255, 0.85) !important;
+  background: rgba(11, 19, 17, 0.8) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
-  border: 1px solid rgba(16, 185, 129, 0.2) !important;
-  color: #0f172a !important;
+  border: 1px solid rgba(66, 197, 138, 0.2) !important;
+  color: #f3f4f6 !important;
   box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06) !important;
   border-radius: 8px !important;
 }
 
 .timeline-item>small {
-  color: #475569 !important;
+  color: #9ca3af !important;
 }
 
 .text-action {
-  color: #475569 !important;
+  color: #9ca3af !important;
 }
 .text-action:hover {
-  color: #ef4444 !important;
+  color: #e4725c !important;
 }
 
 .history-copy span {
-  color: #475569 !important;
+  color: #9ca3af !important;
 }
 
 .history-delete {
-  color: #64748b !important;
+  color: #9ca3af !important;
 }
 .history-delete:hover {
-  color: #ef4444 !important;
+  color: #e4725c !important;
 }
 
 .history-locate {
@@ -484,11 +484,11 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
 }
 
 .sync-note {
-  color: #475569 !important;
+  color: #9ca3af !important;
 }
 
 .leaflet-control-layers label {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
   display: block !important;
   font-size: 11px !important;
   font-weight: 500 !important;
@@ -497,37 +497,37 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
 }
 .leaflet-control-layers input {
   margin-right: 6px !important;
-  accent-color: #10b981 !important;
+  accent-color: #42c58a !important;
 }
 
 .member-actions button, .member-actions a {
-  background: rgba(255, 255, 255, 0.9) !important;
-  border: 1px solid rgba(16, 185, 129, 0.25) !important;
-  color: #334155 !important;
+  background: rgba(34, 49, 45, 0.8) !important;
+  border: 1px solid rgba(66, 197, 138, 0.25) !important;
+  color: #c8d3cf !important;
   border-radius: 6px !important;
 }
 .member-actions button:hover, .member-actions a:hover {
-  background: rgba(16, 185, 129, 0.1) !important;
+  background: rgba(66, 197, 138, 0.15) !important;
   color: #047857 !important;
-  border-color: #10b981 !important;
+  border-color: #42c58a !important;
 }
 
 /* --- WEBGIS CONSOLE UI CONTRAST & MAP CONTROL OFFSET FIXES --- */
 
 /* 1. Map Title Text Contrast Fix */
 .map-title {
-  background: rgba(255, 255, 255, 0.88) !important;
-  color: #0f172a !important;
-  border: 1px solid rgba(16, 185, 129, 0.25) !important;
+  background: rgba(11, 19, 17, 0.8) !important;
+  color: #f3f4f6 !important;
+  border: 1px solid rgba(66, 197, 138, 0.25) !important;
 }
 #mapModeTitle {
-  color: #0f172a !important;
+  color: #f3f4f6 !important;
 }
 
 /* 2. Topbar Action Buttons Contrast Fix */
 #openTeam, #exportReport {
   background: linear-gradient(135deg, #047857 0%, #065f46 100%) !important;
-  color: #ffffff !important;
+  color: rgba(16, 26, 23, 0.8) !important;
 }
 #openTeam:hover, #exportReport:hover {
   background: linear-gradient(135deg, #065f46 0%, #047857 100%) !important;
@@ -537,19 +537,19 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
 /* 3. Active Timeline Card Subtext Contrast Fix */
 .timeline-item.active .timeline-copy span, 
 .timeline-item.active > small {
-  color: #1e293b !important;
+  color: #c8d3cf !important;
 }
 
 /* 4. Landform Badge Background Darkening */
 #stationBadge {
-  background: #b45309 !important; /* Amber-700 */
-  color: #ffffff !important;
+  background: #e8b04b !important; /* Amber-700 */
+  color: rgba(16, 26, 23, 0.8) !important;
 }
 
 /* 5. SOS Banner Action Buttons Darkening */
 .sos-banner button {
   background: #b91c1c !important; /* Red-700 */
-  color: #ffffff !important;
+  color: rgba(16, 26, 23, 0.8) !important;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
 }
 .sos-banner button:hover {
@@ -558,7 +558,7 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
 
 /* 6. Clear History Action Contrast Fix */
 .text-action {
-  color: #475569 !important;
+  color: #9ca3af !important;
 }
 .text-action:hover {
   color: #b91c1c !important;
@@ -566,7 +566,7 @@ button, .icon-btn, .mode-btn, .api-row button, .sync-actions button, .member-act
 
 /* 7. Trash Icon Contrast Fix */
 .history-delete {
-  color: #64748b !important;
+  color: #9ca3af !important;
 }
 .history-delete:hover {
   color: #b91c1c !important;

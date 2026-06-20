@@ -39,7 +39,7 @@
   }
   
   .left-rail {
-    position: fixed;
+    position: fixed !important;
     top: 58px;
     left: 0;
     bottom: 0;
@@ -63,7 +63,7 @@
   }
   
   .right-rail {
-    position: fixed;
+    position: fixed !important;
     top: 58px;
     right: 0;
     bottom: 0;
@@ -146,15 +146,21 @@
   /* Shifting controls on mobile to clear overlays */
   .leaflet-top.leaflet-left {
     top: 70px !important;
-    left: 10px !important;
+    left: 50px !important;
   }
   .leaflet-top.leaflet-right {
     top: 70px !important;
-    right: 10px !important;
+    right: 50px !important;
   }
   .top-actions button {
     flex-shrink: 0 !important;
     min-width: 36px !important;
+  }
+  .status {
+    display: none !important;
+  }
+  .top-actions {
+    gap: 6px !important;
   }
 }
 
@@ -181,6 +187,7 @@
     background: rgba(255, 255, 255, 0.8) !important;
   }
   .team-comms {
+    position: relative !important;
     display: flex !important;
     border-top: 1px solid rgba(16, 185, 129, 0.15) !important;
     border-left: none !important;
